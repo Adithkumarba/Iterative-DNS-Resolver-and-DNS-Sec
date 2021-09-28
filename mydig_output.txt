@@ -1,0 +1,80 @@
+python mydig.py cnn.com A
+
+QUESTION SECTION:
+cnn.com		IN	A
+
+
+ANSWER SECTION:
+cnn.com  IN  A  151.101.193.67
+cnn.com  IN  A  151.101.129.67
+cnn.com  IN  A  151.101.65.67
+cnn.com  IN  A  151.101.1.67
+
+______________________________________
+
+python mydig.py www.cnn.com A
+
+QUESTION SECTION:
+www.cnn.com		IN	A
+
+
+ANSWER SECTION:
+www.cnn.com                 IN  CNAME  turner-tls.map.fastly.net.
+turner-tls.map.fastly.net.  IN  A      199.232.37.67
+
+
+Query time: 341msec
+WHEN: Fri Sep 24 06:38:00 2021
+MSG SIZE rcvd:  86 
+
+______________________________________
+
+python mydig.py paypal.com NS
+
+QUESTION SECTION:
+paypal.com		IN	NS
+
+
+ANSWER SECTION:
+paypal.com  IN  NS  ns2.p57.dynect.net.
+paypal.com  IN  NS  pdns100.ultradns.net.
+paypal.com  IN  NS  pdns100.ultradns.com.
+paypal.com  IN  NS  ns1.p57.dynect.net.
+
+
+Query time: 133msec
+WHEN: Fri Sep 24 06:41:10 2021
+MSG SIZE rcvd:  136 
+
+______________________________________
+
+python mydig.py amazon.com MX  
+
+QUESTION SECTION:
+amazon.com		IN	MX
+
+
+ANSWER SECTION:
+amazon.com  IN  MX  5 amazon-smtp.amazon.com.
+
+
+Query time: 365msec
+WHEN: Fri Sep 24 06:48:39 2021
+MSG SIZE rcvd:  39 
+
+______________________________________
+
+python mydig.py www.google.co.jp A
+
+QUESTION SECTION:
+www.google.co.jp		IN	A
+
+
+ANSWER SECTION:
+www.google.co.jp  IN  A  142.251.32.131
+
+
+Query time: 613msec
+WHEN: Fri Sep 24 06:38:56 2021
+MSG SIZE rcvd:  33 
+

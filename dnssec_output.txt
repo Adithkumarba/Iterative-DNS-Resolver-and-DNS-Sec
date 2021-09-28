@@ -1,0 +1,52 @@
+python dnssec.py paypal.com A
+
+.  dnskey is validated
+Root key validated
+com. DS is validated
+com.  dnskey is validated
+paypal.com. DS is validated
+com. Zone is verified
+paypal.com.  DNSKEYs are good
+paypal.com. A is validated
+paypal.com. Zone is verified
+
+DNSSEC Verified
+
+QUESTION SECTION:
+paypal.com		IN	A
+
+
+ANSWER SECTION:
+paypal.com  IN  A  64.4.250.36
+paypal.com  IN  A  64.4.250.37
+
+
+Query time: 298msec
+WHEN: Fri Sep 24 07:00:33 2021
+MSG SIZE rcvd:  48 
+
+_______________________________________
+
+python dnssec.py dnssec-failed.org A
+
+.  dnskey is validated
+Root key validated
+org. DS is validated
+org.  dnskey is validated
+dnssec-failed.org. DS is validated
+org. Zone is verified
+dnssec-failed.org.  DNSKEYs are good
+dnssec-failed.org. A is validated
+
+DNSSec Verification failed for dnssec-failed.org
+
+_______________________________________
+
+python dnssec.py cnn.com A
+
+.  dnskey is validated
+Root key validated
+com. DS is validated
+
+DNSSEC not supported for cnn.com
+
